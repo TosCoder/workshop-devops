@@ -1,0 +1,10 @@
+version: "3"
+services: 
+  web:
+    image: loohincoder/demo
+
+  reverse-proxy:
+    image:  somkiat/reverse-proxy
+    ports: 
+      8088:8080
+
