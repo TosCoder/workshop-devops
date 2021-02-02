@@ -1,10 +1,14 @@
 version: "3"
 services:
+  frontend:
+    build: ./frontend
+    image: lookhin/frontend:1.0
+    ports: 
+      - 9999:80
+
   backend:
     build: ./backend
     image: loockhin/backend:1.0
-    ports:
-      - 3000:3000
 
   mongo:
     build: ./database

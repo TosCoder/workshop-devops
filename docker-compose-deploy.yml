@@ -1,0 +1,14 @@
+version: "3"
+services:
+  frontend:
+    image: lookhin/frontend:1.0
+    ports: 
+      - 9999:80
+
+  backend:
+    image: loockhin/backend:1.0
+
+  mongo:
+    image: loohin'/mongo:1.0
+    environment:
+      MONGO_INITDB_DATABASE: mongo-test
