@@ -9,6 +9,6 @@ services:
     image: loockhin/backend:1.0
 
   mongo:
-    image: loohin'/mongo:1.0
+    image: my_mongo:1.0
     environment:
       MONGO_INITDB_DATABASE: mongo-test
