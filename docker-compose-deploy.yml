@@ -1,5 +1,6 @@
 version: "3"
 services:
+<<<<<<< HEAD
   frontend:
     image: lookhin/frontend:1.0
     ports: 
@@ -12,3 +13,17 @@ services:
     image: my_mongo:1.0
     environment:
       MONGO_INITDB_DATABASE: mongo-test
+=======
+  fronend:
+    image: somkiat/frontend:0.1
+    ports:
+      - 9999:80
+
+  backend:
+    image: somkiat/backend:0.1
+
+  mongo:
+    image: somkiat/mongo:0.1
+    environment:
+      MONGO_INITDB_DATABASE: mongo-test
+>>>>>>> ec08b38fb50ae5d3ff01a36377aede678b946378
